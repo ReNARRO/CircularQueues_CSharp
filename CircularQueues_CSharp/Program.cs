@@ -105,10 +105,13 @@ namespace CircularQueues_CSharp
                     Console.Write(queue_array[FRONT_position] + "   ");
                     FRONT_position++;
                 }
+                Console.WriteLine();
             }
         }
         static void Main(string[] args)
         {
+            Queues q = new Queue();
+            char ch;
         }
     }
 }
