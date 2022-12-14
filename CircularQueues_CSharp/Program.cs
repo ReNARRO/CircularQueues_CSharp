@@ -33,6 +33,21 @@ namespace CircularQueues_CSharp
                 FRONT = 0;
                 REAR = 0;
             }
+            else
+            {
+                //if rear is at the last position of the array, then the value
+                //of rear is set to 0 that corresponds to the first position of
+                //the array
+                if (REAR == max - 1)
+                    REAR = 0;
+                else
+                    //if rear is not at the last position, then 
+                    //its value is incremented by one.
+                    REAR = REAR + 1;
+            }
+            //Once the position of rear is determined, the element is
+            // added at its proper place.
+            queue_array[REAR] = element;
         }
         static void Main(string[] args)
         {
