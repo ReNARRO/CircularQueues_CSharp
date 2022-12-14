@@ -49,6 +49,14 @@ namespace CircularQueues_CSharp
             // added at its proper place.
             queue_array[REAR] = element;
         }
+        public void remove()
+        {
+            if(FRONT == -1)
+            {
+                Console.WriteLine("\nQueue underflow\n");
+                return;
+            }
+        }
         static void Main(string[] args)
         {
         }
